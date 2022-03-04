@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clima Tempo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <button onclick="acionarPesquisa()">Previsão da sua região!</button>
+        </div>
+        <div class="erro"></div>
+        <div>
+            <p>Ou se preferir, digite os dados da localização desejada</p>
+            <div>
+                <label for="latitude">Digite a Latitude:</label>
+                <input name="latitude" class="latitude" type="text" placeholder="latitude" />
+            </div>
+            <div>
+                <label for="longitude">Digite a Longitude:</label>
+                <input name="longitude" class="longitude" type="text" placeholder="longitude" />
+            </div>
+            <div>
+                <button onclick="acionarPesquisaManual()">Previsão da sua região!</button>
+            </div>
+        </div>
+
+        <div class="dados">
+            <img src="https://via.placeholder.com/150" alt="foto do tempo" />
+            <ul>
+                <li>Temperatura: <span class="temperatura">-</span></li>
+                <li>Sensação termica: <span class="sensacao">-</span></li>
+                <li>Temperatura minima: <span class="minima">-</span></li>
+                <li>Temperatura maxima: <span class="maxima">-</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

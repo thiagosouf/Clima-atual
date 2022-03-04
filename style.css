@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .dados {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    max-width: 500px;
+  }
+  
+  .dados ul {
+      
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .dados img {
+      margin-left: auto;
+      margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  
